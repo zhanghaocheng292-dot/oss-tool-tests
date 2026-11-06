@@ -1,0 +1,15 @@
+# Runtime data (may contain password hashes, API tokens, session secrets)
+tests/02-memos/data/*
+!tests/02-memos/data/.gitkeep
+tests/03-changedetection/data/*
+!tests/03-changedetection/data/.gitkeep
+
+# Local virtualenvs / downloaded binaries live outside this repo
+# (see /tmp/oss-tools on the test machine)
+
+# Secrets and bulky extractor dumps
+*.cookies.txt
+*.raw.stdout.txt
+secret.txt
+.env
+*.pid

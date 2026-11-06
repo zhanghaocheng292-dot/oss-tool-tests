@@ -1,0 +1,38 @@
+[
+  {
+    "id": "BigBuckBunny/big_buck_bunny_1080p_stereo.ogg",
+    "extractor": "archive.org",
+    "title": "Big Buck Bunny",
+    "uploader": null,
+    "uploader_id": null,
+    "duration": 596.46,
+    "upload_date": null,
+    "webpage_url": "https://archive.org/details/BigBuckBunny",
+    "view_count": null,
+    "like_count": null,
+    "ext": "ogg",
+    "resolution": "1920x1080",
+    "description_preview": "",
+    "tags_preview": [],
+    "_type": "video",
+    "n_entries": 2
+  },
+  {
+    "id": "BigBuckBunny/big_buck_bunny_720p_stereo.ogg",
+    "extractor": "archive.org",
+    "title": "Big Buck Bunny",
+    "uploader": null,
+    "uploader_id": null,
+    "duration": 596.46,
+    "upload_date": null,
+    "webpage_url": "https://archive.org/details/BigBuckBunny",
+    "view_count": null,
+    "like_count": null,
+    "ext": "ogg",
+    "resolution": "1280x720",
+    "description_preview": "",
+    "tags_preview": [],
+    "_type": "video",
+    "n_entries": 2
+  }
+]

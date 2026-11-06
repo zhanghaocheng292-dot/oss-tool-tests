@@ -1,0 +1,45 @@
+{
+  "tested_at": "2026-11-06 23:46:16 CST",
+  "version": "26.11.0",
+  "port": 18081,
+  "healthz": "Service ready.",
+  "created_user": {
+    "username": "tester",
+    "displayName": "测试员",
+    "role": "ADMIN"
+  },
+  "signin_request_shape": {
+    "passwordCredentials": {
+      "username": "<user>",
+      "password": "<secret>"
+    }
+  },
+  "signin_flat_username_password": "HTTP 400 invalid credentials (已记录为失败步骤)",
+  "create_memo": {
+    "name": "memos/ZAfz36Q4vZqKjWgLt6AiM9",
+    "visibility": "PRIVATE",
+    "tags": [
+      "测试",
+      "开源",
+      "知识库"
+    ],
+    "property": {
+      "title": "开源工具实测笔记",
+      "hasLink": false,
+      "hasCode": false,
+      "hasTaskList": true,
+      "hasIncompleteTasks": true,
+      "hasInlineImage": false
+    },
+    "title": "开源工具实测笔记",
+    "createTime_utc": "2026-11-06T15:46:03Z"
+  },
+  "list_count": 1,
+  "filter_content_contains_Memos": "HTTP 200, found memo",
+  "filter_negative_XYZNOTFOUND12345_count": 0,
+  "pwa": {
+    "manifest": "/site.webmanifest",
+    "apple_mobile_web_app_capable": "yes",
+    "viewport": "width=device-width, initial-scale=1, user-scalable=no"
+  }
+}

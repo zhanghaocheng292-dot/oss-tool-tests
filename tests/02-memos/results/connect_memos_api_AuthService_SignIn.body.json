@@ -1,0 +1,13 @@
+{
+  "user": {
+    "name": "users/tester",
+    "username": "tester",
+    "displayName": "测试员",
+    "role": "ADMIN",
+    "state": "NORMAL",
+    "createTime": "2026-11-06T15:44:41Z",
+    "updateTime": "2026-11-06T15:44:41Z"
+  },
+  "accessToken": "eyJhbGciOiJIUzI1...REDACTED...225uj1aU",
+  "accessTokenExpireTime": "2026-11-06T16:00:44.605188447Z"
+}

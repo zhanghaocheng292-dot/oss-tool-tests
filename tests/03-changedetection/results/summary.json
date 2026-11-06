@@ -1,0 +1,55 @@
+{
+  "tested_at": "2026-11-06 23:47:18 CST",
+  "version": "0.70.2",
+  "install": "pip install changedetection.io==0.70.2",
+  "listen": "http://127.0.0.1:15000",
+  "pwa_manifest": "/site.webmanifest (display=standalone, 含 share_target)",
+  "systeminfo": {
+    "version": "0.70.2",
+    "watch_count_after_add": 3,
+    "processors": [
+      "text_json_diff",
+      "restock_diff"
+    ]
+  },
+  "failed_without_flag": {
+    "error": "Fetch blocked: URL resolves to a private/reserved IP address or contains a parser-differential payload. Set ALLOW_IANA_RESTRICTED_ADDRESSES=true to allow.",
+    "affected": [
+      "https://news.ycombinator.com/",
+      "https://changedetection.io/CHANGELOG.txt",
+      "https://example.com/"
+    ],
+    "note": "这是软件自带的 SSRF 防护。本云端环境的出口代理会把公网域名解析成内网地址，因此必须设置该环境变量才能完成实测。普通家用/VPS 部署通常不需要打开它。"
+  },
+  "succeeded_after_ALLOW_IANA_RESTRICTED_ADDRESSES": {
+    "example.com": {
+      "uuid": "4e01fcec-3e8b-44e4-bdd8-814faed479ad",
+      "fetched_at": "2026-11-06 23:47:09 CST",
+      "last_error": false,
+      "md5": "718d0cac5fba85218b5b1791bde6114e",
+      "snapshot_preview": "This domain is for use in documentation examples without needing permission. This is not a service; avoid relying on it for testing and monitoring purposes."
+    },
+    "local_fixture": {
+      "uuid": "03bec993-7338-4c25-ba7d-4a5ed6b3cb07",
+      "url": "http://127.0.0.1:18099/sample.html",
+      "v1": {
+        "at": "2026-11-06 23:47:10 CST",
+        "md5": "56e03c43adba0d347d03ed9ab8ac6469",
+        "text": "价格：100 元 / 第一版页面"
+      },
+      "v2": {
+        "at": "2026-11-06 23:47:18 CST",
+        "md5": "ea928d63be341b53a460f0bc31f21834",
+        "text": "价格：80 元 / 第二版页面"
+      },
+      "change_detected": true
+    }
+  },
+  "api": {
+    "add_watch": "POST /api/v1/watch -> 201 {uuid}",
+    "recheck": "GET /api/v1/watch/{uuid}?recheck=1 -> 200 \"OK\"",
+    "history": "GET /api/v1/watch/{uuid}/history -> {unix_ts: snapshot_path}",
+    "snapshot_text": "GET /api/v1/watch/{uuid}/history/{ts}",
+    "wrong_secret_txt": "data/secret.txt 是 Flask 会话密钥，不是 API key；API key 在 datastore 的 settings.application.api_access_token，请求头为 x-api-key"
+  }
+}

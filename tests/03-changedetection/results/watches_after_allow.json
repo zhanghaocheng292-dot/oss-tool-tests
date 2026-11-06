@@ -1,0 +1,18 @@
+{
+  "example": {
+    "last_error": false,
+    "last_checked": 1793980029,
+    "last_changed": 0,
+    "previous_md5": "718d0cac5fba85218b5b1791bde6114e",
+    "title": "example.com public page",
+    "url": "https://example.com/"
+  },
+  "fixture": {
+    "last_error": false,
+    "last_checked": 1793980030,
+    "last_changed": 0,
+    "previous_md5": "56e03c43adba0d347d03ed9ab8ac6469",
+    "title": "local fixture price page",
+    "url": "http://127.0.0.1:18099/sample.html"
+  }
+}

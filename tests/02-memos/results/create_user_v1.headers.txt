@@ -1,0 +1,6 @@
+HTTP/1.1 410 Gone
+Content-Type: application/json
+Vary: Origin
+Date: Fri, 06 Nov 2026 15:44:42 GMT
+Content-Length: 209
+

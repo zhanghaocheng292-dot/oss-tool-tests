@@ -1,0 +1,14 @@
+# 样例配置，供以后在有 Docker 的机器上自建 Memos。
+# 本测试环境没有 Docker，此文件未实际运行。
+services:
+  memos:
+    image: neosmemo/memos:26.11.0
+    container_name: memos
+    ports:
+      - "5230:5230"
+    volumes:
+      - memos-data:/var/opt/memos
+    restart: unless-stopped
+
+volumes:
+  memos-data:

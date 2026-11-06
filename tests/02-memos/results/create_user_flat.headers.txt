@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Cache-Control: no-cache, no-store, must-revalidate
+Content-Type: application/json
+Expires: 0
+Pragma: no-cache
+Vary: Origin
+Date: Fri, 06 Nov 2026 15:44:41 GMT
+Content-Length: 240
+

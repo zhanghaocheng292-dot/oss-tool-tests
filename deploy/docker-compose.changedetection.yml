@@ -1,0 +1,14 @@
+# 样例配置，供以后在有 Docker 的机器上自建 changedetection.io。
+# 本测试环境没有 Docker，此文件未实际运行。
+services:
+  changedetection:
+    image: ghcr.io/dgtlmoon/changedetection.io:0.70.2
+    container_name: changedetection
+    ports:
+      - "5000:5000"
+    volumes:
+      - changedetection-data:/datastore
+    restart: unless-stopped
+
+volumes:
+  changedetection-data:

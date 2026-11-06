@@ -1,0 +1,11 @@
+time=2026-11-06T23:43:50.360+08:00 level=INFO msg="initializing new database with latest schema" file=migration/sqlite/LATEST.sql
+time=2026-11-06T23:43:50.365+08:00 level=INFO msg="database initialized successfully" schemaVersion=26.10.1
+Memos 26.11.0 started successfully!
+Data directory: /workspace/oss-tool-tests/tests/02-memos/data
+Database driver: sqlite
+Server running on 127.0.0.1:18081
+Access your memos at: http://127.0.0.1:18081
+Access mode: private
+time=2026-11-06T23:43:50.387+08:00 level=INFO msg="rebuilding memo payloads" fromVersion=0 toVersion=1
+time=2026-11-06T23:43:50.388+08:00 level=INFO msg="rebuilt memo payloads" refreshed=0 skipped=0 failed=0
+time=2026-11-06T23:45:44.605+08:00 level=INFO msg=OK method=/memos.api.AuthService/SignIn

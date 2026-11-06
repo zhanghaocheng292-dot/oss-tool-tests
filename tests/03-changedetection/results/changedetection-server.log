@@ -1,0 +1,73 @@
+2026-11-06 23:47:01.244 | DEBUG    | changedetectionio:<module>:104 - Set multiprocessing default to 'spawn' for thread safety (explicit contexts used everywhere)
+2026-11-06 23:47:01.399 | DEBUG    | changedetectionio.content_fetchers:<module>:206 - Falling back to selenium as fetcher
+2026-11-06 23:47:01.432 | DEBUG    | changedetectionio.queue_handlers:__init__:59 - RecheckPriorityQueue initialized successfully
+2026-11-06 23:47:01.432 | DEBUG    | changedetectionio.queue_handlers:__init__:457 - NotificationQueue initialized successfully
+2026-11-06 23:47:01.433 | DEBUG    | changedetectionio.pluggy_interface:get_plugin_template_paths:1123 - Added base processors template path: /tmp/oss-tools/venvs/changedetection/lib/python3.13/site-packages/changedetectionio/processors/templates
+2026-11-06 23:47:01.449 | DEBUG    | changedetectionio.pluggy_interface:get_plugin_template_paths:1138 - Added processor template path: /tmp/oss-tools/venvs/changedetection/lib/python3.13/site-packages/changedetectionio/processors/image_ssim_diff/templates
+2026-11-06 23:47:01.450 | DEBUG    | changedetectionio.pluggy_interface:get_plugin_template_paths:1138 - Added processor template path: /tmp/oss-tools/venvs/changedetection/lib/python3.13/site-packages/changedetectionio/processors/restock_diff/templates
+2026-11-06 23:47:01.450 | INFO     | changedetectionio.flask_app:_configure_plugin_templates:212 - Configured Jinja2 to search 3 plugin template directories
+2026-11-06 23:47:01.450 | INFO     | changedetectionio.flask_app:<module>:248 - System locale default is ('C', 'UTF-8')
+2026-11-06 23:47:01.450 | SUCCESS  | changedetectionio:main:347 - changedetection.io version 0.70.2 starting.
+2026-11-06 23:47:01.456 | INFO     | changedetectionio.store:save_version_copy_json_db:84 - Backing up changedetection.json due to new version to '/workspace/oss-tool-tests/tests/03-changedetection/data/changedetection-0-70-2.json'.
+2026-11-06 23:47:01.456 | INFO     | changedetectionio.store:reload_state:205 - Datastore path is '/workspace/oss-tool-tests/tests/03-changedetection/data'
+2026-11-06 23:47:01.457 | INFO     | changedetectionio.store:reload_state:230 - Loading existing datastore
+2026-11-06 23:47:01.457 | INFO     | changedetectionio.store:_load_settings:98 - Loading settings from /workspace/oss-tool-tests/tests/03-changedetection/data/changedetection.json
+2026-11-06 23:47:01.457 | INFO     | changedetectionio.store.file_saving_datastore:load_all_watches:334 - Loading watches from individual watch.json files...
+2026-11-06 23:47:01.538 | INFO     | changedetectionio.store.file_saving_datastore:load_all_watches:384 - Loaded 3 watches from disk in 0.08s (37 watches/sec)
+2026-11-06 23:47:01.538 | INFO     | changedetectionio.store:_rehydrate_watches:162 - Rehydrating 3 watches...
+2026-11-06 23:47:01.538 | SUCCESS  | changedetectionio.store:_rehydrate_watches:171 - Rehydrated 3 watches into Watch objects
+2026-11-06 23:47:01.538 | INFO     | changedetectionio.store.file_saving_datastore:load_all_tags:471 - Loading tags from individual tag.json files...
+2026-11-06 23:47:01.538 | INFO     | changedetectionio.store.file_saving_datastore:load_all_tags:501 - Loaded 2 tags from disk
+2026-11-06 23:47:01.538 | INFO     | changedetectionio.store:_load_tags:452 - Loaded 2 tags from individual tag.json files
+2026-11-06 23:47:01.538 | INFO     | changedetectionio.store:_rehydrate_tags:154 - Tag: 446f0725-4b0b-4950-ba7e-cd457d99c48b changedetection.io
+2026-11-06 23:47:01.539 | INFO     | changedetectionio.store:_rehydrate_tags:154 - Tag: 0f53e2b0-3a30-41c5-bdf5-4ce1b4d7f5f6 Tech news
+2026-11-06 23:47:01.539 | INFO     | changedetectionio.store.updates:run_updates:209 - Current schema version: 34
+2026-11-06 23:47:01.678 | INFO     | changedetectionio.realtime.socket_server:init_socketio:302 - SOCKETIO_MODE=threading: Using threading mode for Socket.IO
+2026-11-06 23:47:01.678 | INFO     | changedetectionio.realtime.socket_server:init_socketio:309 - Platform: linux, Python: 3.13, Socket.IO mode: threading
+2026-11-06 23:47:01.691 | INFO     | changedetectionio.realtime.socket_server:init_socketio:324 - Socket.IO: Registering connect event handler
+2026-11-06 23:47:01.691 | INFO     | changedetectionio.realtime.socket_server:__init__:46 - SignalHandler: Connected to notification_event signal
+2026-11-06 23:47:01.691 | INFO     | changedetectionio.realtime.socket_server:init_socketio:437 - Socket.IO initialized and attached to main Flask app
+2026-11-06 23:47:01.691 | INFO     | changedetectionio.realtime.socket_server:init_socketio:438 - Socket.IO: Registered event handlers: []
+2026-11-06 23:47:01.691 | INFO     | changedetectionio.flask_app:changedetection_app:1471 - Socket.IO server initialized
+2026-11-06 23:47:01.717 | INFO     | changedetectionio.flask_app:changedetection_app:1584 - Starting 5 workers during app initialization
+2026-11-06 23:47:01.717 | INFO     | changedetectionio.worker_pool:start_async_workers:122 - Starting 5 async workers (isolated threads)
+2026-11-06 23:47:01.719 | INFO     | changedetectionio.worker:async_update_worker:77 - Starting async worker 0 on thread 'PageFetchAsyncUpdateWorker-0' (max_jobs=10, max_runtime=3600s)
+2026-11-06 23:47:01.720 | INFO     | changedetectionio.worker:async_update_worker:77 - Starting async worker 2 on thread 'PageFetchAsyncUpdateWorker-2' (max_jobs=10, max_runtime=3600s)
+2026-11-06 23:47:01.720 | INFO     | changedetectionio.worker:async_update_worker:77 - Starting async worker 1 on thread 'PageFetchAsyncUpdateWorker-1' (max_jobs=10, max_runtime=3600s)
+2026-11-06 23:47:01.721 | INFO     | changedetectionio.worker:async_update_worker:77 - Starting async worker 3 on thread 'PageFetchAsyncUpdateWorker-3' (max_jobs=10, max_runtime=3600s)
+2026-11-06 23:47:01.722 | INFO     | changedetectionio.worker:async_update_worker:77 - Starting async worker 4 on thread 'PageFetchAsyncUpdateWorker-4' (max_jobs=10, max_runtime=3600s)
+2026-11-06 23:47:01.723 | INFO     | changedetectionio.flask_app:changedetection_app:1611 - Started 1 notification worker(s)
+Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+ * Serving Flask app 'changedetectionio.flask_app'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:15000
+[33mPress CTRL+C to quit[0m
+2026-11-06 23:47:02.013 | INFO     | changedetectionio.processors:_available_processors_cached:225 - DISABLED_PROCESSORS set, disabling: ['image_ssim_diff']
+127.0.0.1 - - [06/Nov/2026 23:47:02] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:09] "GET /api/v1/watch/4e01fcec-3e8b-44e4-bdd8-814faed479ad?recheck=1 HTTP/1.1" 200 -
+2026-11-06 23:47:09.106 | INFO     | changedetectionio.worker:async_update_worker:171 - Worker 0 processing watch UUID 4e01fcec-3e8b-44e4-bdd8-814faed479ad Priority 1 URL https://example.com/
+2026-11-06 23:47:09.109 | INFO     | changedetectionio.content_fetchers:_log_fetcher_capabilities:98 - Content fetcher 'html_requests' (Basic fast Plaintext/HTTP Client) for watch 4e01fcec-3e8b-44e4-bdd8-814faed479ad - capabilities: browser_steps=False, screenshots=False, xpath_element_data=False, pdf=True
+127.0.0.1 - - [06/Nov/2026 23:47:09] "[35m[1mPOST /api/v1/watch HTTP/1.1[0m" 201 -
+2026-11-06 23:47:09.610 | INFO     | changedetectionio.worker:async_update_worker:171 - Worker 3 processing watch UUID 03bec993-7338-4c25-ba7d-4a5ed6b3cb07 Priority 1 URL http://127.0.0.1:18099/sample.html
+127.0.0.1 - - [06/Nov/2026 23:47:09] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07?recheck=1 HTTP/1.1" 200 -
+2026-11-06 23:47:09.612 | INFO     | changedetectionio.content_fetchers:_log_fetcher_capabilities:98 - Content fetcher 'html_requests' (Basic fast Plaintext/HTTP Client) for watch 03bec993-7338-4c25-ba7d-4a5ed6b3cb07 - capabilities: browser_steps=False, screenshots=False, xpath_element_data=False, pdf=True
+2026-11-06 23:47:09.615 | INFO     | changedetectionio.content_fetchers.requests:_run_sync:173 - URL: http://127.0.0.1:18099/sample.html No content-type encoding in HTTP headers - Using encoding 'utf-8' from HTML meta charset tag
+127.0.0.1 - - [06/Nov/2026 23:47:10] "GET /api/v1/watch/4e01fcec-3e8b-44e4-bdd8-814faed479ad HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:10] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:18] "GET /api/v1/watch/4e01fcec-3e8b-44e4-bdd8-814faed479ad/history HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:18] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07/history HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:18] "[33mGET /api/v1/watch/4e01fcec-3e8b-44e4-bdd8-814faed479ad/history.txt HTTP/1.1[0m" 404 -
+127.0.0.1 - - [06/Nov/2026 23:47:18] "GET /api/v1/watch/4e01fcec-3e8b-44e4-bdd8-814faed479ad HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:18] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:18] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07?recheck=1 HTTP/1.1" 200 -
+2026-11-06 23:47:18.253 | INFO     | changedetectionio.worker:async_update_worker:171 - Worker 0 processing watch UUID 03bec993-7338-4c25-ba7d-4a5ed6b3cb07 Priority 1 URL http://127.0.0.1:18099/sample.html
+2026-11-06 23:47:18.255 | INFO     | changedetectionio.content_fetchers:_log_fetcher_capabilities:98 - Content fetcher 'html_requests' (Basic fast Plaintext/HTTP Client) for watch 03bec993-7338-4c25-ba7d-4a5ed6b3cb07 - capabilities: browser_steps=False, screenshots=False, xpath_element_data=False, pdf=True
+2026-11-06 23:47:18.258 | INFO     | changedetectionio.content_fetchers.requests:_run_sync:173 - URL: http://127.0.0.1:18099/sample.html No content-type encoding in HTTP headers - Using encoding 'utf-8' from HTML meta charset tag
+2026-11-06 23:47:18.262 | INFO     | changedetectionio.worker:async_update_worker:625 - Change detected in UUID 03bec993-7338-4c25-ba7d-4a5ed6b3cb07 - http://127.0.0.1:18099/sample.html
+127.0.0.1 - - [06/Nov/2026 23:47:19] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:19] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07/history HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:19] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07/history/1793980030 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:19] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07?snapshot=1793980030 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:19] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07/history/1793980038 HTTP/1.1" 200 -
+127.0.0.1 - - [06/Nov/2026 23:47:19] "GET /api/v1/watch/03bec993-7338-4c25-ba7d-4a5ed6b3cb07?snapshot=1793980038 HTTP/1.1" 200 -

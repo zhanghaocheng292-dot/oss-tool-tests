@@ -1,0 +1,140 @@
+[
+  {
+    "id": "archive_big_buck_bunny",
+    "url": "https://archive.org/details/BigBuckBunny",
+    "note": "Internet Archive 公版动画，用于验证基础元数据提取",
+    "exit_code": 0,
+    "elapsed_sec": 3.14,
+    "tested_at": "2026-11-06 23:43:51 CST",
+    "success": true,
+    "extracted": [
+      {
+        "id": "BigBuckBunny/big_buck_bunny_1080p_stereo.ogg",
+        "extractor": "archive.org",
+        "title": "Big Buck Bunny",
+        "uploader": null,
+        "uploader_id": null,
+        "duration": 596.46,
+        "upload_date": null,
+        "webpage_url": "https://archive.org/details/BigBuckBunny",
+        "view_count": null,
+        "like_count": null,
+        "ext": "ogg",
+        "resolution": "1920x1080",
+        "description_preview": "",
+        "tags_preview": [],
+        "_type": "video",
+        "n_entries": 2
+      },
+      {
+        "id": "BigBuckBunny/big_buck_bunny_720p_stereo.ogg",
+        "extractor": "archive.org",
+        "title": "Big Buck Bunny",
+        "uploader": null,
+        "uploader_id": null,
+        "duration": 596.46,
+        "upload_date": null,
+        "webpage_url": "https://archive.org/details/BigBuckBunny",
+        "view_count": null,
+        "like_count": null,
+        "ext": "ogg",
+        "resolution": "1280x720",
+        "description_preview": "",
+        "tags_preview": [],
+        "_type": "video",
+        "n_entries": 2
+      }
+    ],
+    "n_json_objects": 2
+  },
+  {
+    "id": "youtube_me_at_the_zoo",
+    "url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+    "note": "YouTube 历史上第一个公开视频 Me at the zoo",
+    "exit_code": 0,
+    "elapsed_sec": 1.29,
+    "tested_at": "2026-11-06 23:43:53 CST",
+    "success": true,
+    "extracted": [
+      {
+        "id": "jNQXAC9IVRw",
+        "extractor": "youtube",
+        "title": "Me at the zoo",
+        "uploader": "jawed",
+        "uploader_id": "@jawed",
+        "duration": 19,
+        "upload_date": "20050424",
+        "webpage_url": "https://www.youtube.com/watch?v=jNQXAC9IVRw",
+        "view_count": 447874063,
+        "like_count": 20130385,
+        "ext": "webm",
+        "resolution": "320x240",
+        "description_preview": "Microplastics are accumulating in human brains at an alarming rate\nhttps://www.youtube.com/watch?v=0PT5c1z3LL8\n\n“Nanoplastics and Human Health” with Matthew J Campen, PhD, MSPH\nhttps://www.youtube.com/watch?v=RRBN_4L09Mg\n\n00:00 Intro\n00:05 The cool thing\n00:17 End",
+        "tags_preview": [
+          "me at the zoo",
+          "jawed karim",
+          "first youtube video"
+        ],
+        "_type": "video",
+        "n_entries": null
+      }
+    ],
+    "n_json_objects": 1
+  },
+  {
+    "id": "bilibili_official_sample",
+    "url": "https://www.bilibili.com/video/BV1GJ411x7h7",
+    "note": "B 站公开视频（若失效会记录真实错误）",
+    "exit_code": 1,
+    "elapsed_sec": 1.58,
+    "tested_at": "2026-11-06 23:43:54 CST",
+    "success": false,
+    "stderr_preview": "ERROR: [BiliBili] 1GJ411x7h7: Unable to download webpage: HTTP Error 412: Precondition Failed (caused by <HTTPError 412: Precondition Failed>)\n",
+    "stdout_preview": ""
+  },
+  {
+    "id": "douyin_public_share",
+    "url": "https://www.douyin.com/video/7703736404513815642",
+    "note": "抖音公开视频元数据提取（只取信息，不下载成片）",
+    "exit_code": 1,
+    "elapsed_sec": 0.82,
+    "tested_at": "2026-11-06 23:43:55 CST",
+    "success": false,
+    "stderr_preview": "ERROR: [Douyin] 7703736404513815642: Fresh cookies (not necessarily logged in) are needed\n",
+    "stdout_preview": ""
+  },
+  {
+    "id": "bilibili_av2_cookies",
+    "url": "https://www.bilibili.com/video/av2",
+    "note": "B 站历史视频 av2 / BV1xx411c7mD，使用匿名 buvid3 cookies",
+    "exit_code": 0,
+    "success": true,
+    "extracted": {
+      "id": "BV1xx411c7mD",
+      "extractor": "BiliBili",
+      "title": "字幕君交流场所",
+      "uploader": "碧诗",
+      "duration": 2055.637,
+      "upload_date": "20090909",
+      "webpage_url": "https://www.bilibili.com/video/av2",
+      "view_count": 5602521,
+      "description_preview": "www",
+      "n_json_objects": 1
+    },
+    "tested_at": "2026-11-06 23:47:42 CST"
+  },
+  {
+    "id": "bilibili_houlange_ua",
+    "url": "https://www.bilibili.com/video/BV1FV411d7u7",
+    "success": false,
+    "exit_code": 1,
+    "stderr_preview": "ERROR: [BiliBili] 1FV411d7u7: Unable to download webpage: HTTP Error 412: Precondition Failed (caused by <HTTPError 412: Precondition Failed>)\n"
+  },
+  {
+    "id": "bilibili_houlange_cookies",
+    "url": "https://www.bilibili.com/video/BV1FV411d7u7",
+    "success": false,
+    "exit_code": 1,
+    "stderr_preview": "ERROR: [BiliBili] 1FV411d7u7: Unable to download webpage: HTTP Error 412: Precondition Failed (caused by <HTTPError 412: Precondition Failed>)\n"
+  }
+]
